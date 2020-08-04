@@ -6,6 +6,7 @@ const TableHeader = () => {
       <tr>
         <th>To-Do</th>
         <th>When</th>
+        <th>Remove</th>
       </tr>
     </thead>
   )
