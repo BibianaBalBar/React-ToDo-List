@@ -17,6 +17,9 @@ const TableBody = (props) => {
       <tr key={index}>
         <td>{row.todo}</td>
         <td>{row.when}</td>
+        <td>
+          <button onClick={() => props.removeItem(index)}>Delete</button>
+        </td>
       </tr>
     )
   })
@@ -24,17 +27,16 @@ const TableBody = (props) => {
   return <tbody>{rows}</tbody>
 }
 
-class Table extends Component {
-  render() {
-    const {listTodosData} = this.props
+const Table = (props) => {
+  const { listTodosData, removeItem } = props
 
-    return (
-      <table>
-        <TableHeader />
-        <TableBody listTodosData={listTodosData} />
-      </table>
-    )
-  }
+  return (
+    <table>
+      <TableHeader />
+      <TableBody listTodosData={listTodosData} removeItem={removeItem} />
+    </table>
+  )
+  
 }
 
 export default Table
