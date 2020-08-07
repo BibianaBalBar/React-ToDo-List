@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <div className="container">
         <h1>React To-Do List</h1>
-        <p>List here your To-Dos.</p>
+        <p>List here your To-Dos:</p>
         <Table listTodosData={listTodos} removeItem={this.removeItem} />
         <h3>Add New</h3>
         <Form handleSubmit={this.handleSubmit} />
