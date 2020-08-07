@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from "react";
 
 const TableHeader = () => {
   return (
@@ -9,8 +9,8 @@ const TableHeader = () => {
         <th>Remove</th>
       </tr>
     </thead>
-  )
-}
+  );
+};
 
 const TableBody = (props) => {
   const rows = props.listTodosData.map((row, index) => {
@@ -22,22 +22,21 @@ const TableBody = (props) => {
           <button onClick={() => props.removeItem(index)}>Delete</button>
         </td>
       </tr>
-    )
-  })
+    );
+  });
 
-  return <tbody>{rows}</tbody>
-}
+  return <tbody>{rows}</tbody>;
+};
 
 const Table = (props) => {
-  const { listTodosData, removeItem } = props
+  const { listTodosData, removeItem } = props;
 
   return (
     <table>
       <TableHeader />
       <TableBody listTodosData={listTodosData} removeItem={removeItem} />
     </table>
-  )
-  
-}
+  );
+};
 
-export default Table
+export default Table;
