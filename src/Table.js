@@ -19,7 +19,9 @@ const TableBody = (props) => {
         <td>{row.todo}</td>
         <td>{row.when}</td>
         <td>
-          <button onClick={() => props.removeItem(index)}>Delete</button>
+          <button className='button-d' onClick={() => props.removeItem(index)}>
+            Delete
+          </button>
         </td>
       </tr>
     );
