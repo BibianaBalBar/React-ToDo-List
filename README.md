@@ -1,8 +1,13 @@
 # React ToDo List
 
+## ToDo List build with React.js
+
+![todoListReact](https://github.com/BibianaBalBar/React-ToDo-List/blob/master/img/react_todo.gif)
+
 Project build based on [this React tutorial](https://www.taniarascia.com/getting-started-with-react/).
 
-
+        //
+        //
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
